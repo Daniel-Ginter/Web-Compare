@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Web-Compare_fingerprint" />
+        <module name="Web-Compare_compare" />
+        <module name="Web-Compare_bdd_test_suite" />
+        <module name="Web-Compare_util" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Web-Compare" target="11" />
+      <module name="Web-Compare_bdd_test_suite" target="15" />
+      <module name="Web-Compare_compare" target="11" />
+      <module name="Web-Compare_fingerprint" target="11" />
+      <module name="Web-Compare_util" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

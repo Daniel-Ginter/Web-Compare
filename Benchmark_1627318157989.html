@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Algorithm Benchmarking</title>
+		<style>
+			html{min-height:100%;}
+			body{min-height:100%; margin: 0; background: linear-gradient(45deg, #49a09d, #5f2c82); font-family: sans-serif; font-weight: 100; margin-bottom:25px;}
+			table{margin:auto; border-collapse: collapse; box-shadow: 0 0 20px rgba(0,0,0,0.1); margin-top:40px;}
+			thead th, td:first-child, .category{background-color: #55608f;}
+			tr:nth-child(1) {background-color:#3d54b9;}
+			th,td{padding: 10px;background-color: rgba(255,255,255,0.2);color: #fff;}
+			tbody tr:hover{background-color: rgba(255,255,255,0.3);}
+			.spacerRow td{ padding:7px;}
+			.circle{width:10px; height: 10px; background-color:green; border-radius:50%; display:inline-block; margin-right:5px;}
+			.fault{color:#fff700;}
+		</style>
+	</head>
+	<body>
+		<div>
+<table id='rootTable'>
+<thead><tr> <th>Images</th> <th>Category</th> <th colspan=3>Distance</th> </tr></thead>
+<tbody><tr><td colspan = 2></td><td id='1901079651'>AverageColorHash [32]</td><td id='1901141155'>AverageColorHash [64]</td><td id='1901234372'>AverageColorHash [128]</td></tr>
+<tr><td colspan = 2><b>Actual Resolution:</b></td><td>36bits</td><td>64bits</td><td>132bits</td></tr>
+<tr><td colspan = 2><b>Threshold:</b></td><td>0,100</td><td>0,100</td><td>0,100</td></tr>
+<tr class='spacerRow'><td colspan='2'></td><td colspan='3'></td></tr>
+<tr><td>Chrome_1920_1080-a-1-Chrome_1920_1080-a-3</td><td class='category'>[0-0]</td><td class=''>0,000</td><td class=''>0,000</td><td class=''>0,000</td></tr>
+<tr><td>Chrome_1920_1080-a-1-Chrome_1920_1080-a-5</td><td class='category'>[0-0]</td><td class=''>0,000</td><td class=''>0,000</td><td class=''>0,000</td></tr>
+<tr><td>Chrome_1920_1080-a-1-source</td><td class='category'>[0-0]</td><td class='fault'>0,139</td><td class='fault'>0,344</td><td class='fault'>0,288</td></tr>
+<tr><td>Chrome_1920_1080-a-1-source2</td><td class='category'>[0-0]</td><td class='fault'>0,250</td><td class='fault'>0,297</td><td class='fault'>0,326</td></tr>
+<tr><td>Chrome_1920_1080-a-1-source3</td><td class='category'>[0-0]</td><td class='fault'>0,250</td><td class='fault'>0,297</td><td class='fault'>0,326</td></tr>
+<tr><td>Chrome_1920_1080-a-1-source_bearbeitet</td><td class='category'>[0-0]</td><td class='fault'>0,250</td><td class='fault'>0,328</td><td class='fault'>0,311</td></tr>
+<tr><td>Chrome_1920_1080-a-1-source_groß</td><td class='category'>[0-0]</td><td class='fault'>0,556</td><td class='fault'>0,484</td><td class='fault'>0,508</td></tr>
+<tr><td>Chrome_1920_1080-a-3-Chrome_1920_1080-a-5</td><td class='category'>[0-0]</td><td class=''>0,000</td><td class=''>0,000</td><td class=''>0,000</td></tr>
+<tr><td>Chrome_1920_1080-a-3-source</td><td class='category'>[0-0]</td><td class='fault'>0,139</td><td class='fault'>0,344</td><td class='fault'>0,288</td></tr>
+<tr><td>Chrome_1920_1080-a-3-source2</td><td class='category'>[0-0]</td><td class='fault'>0,250</td><td class='fault'>0,297</td><td class='fault'>0,326</td></tr>
+<tr><td>Chrome_1920_1080-a-3-source3</td><td class='category'>[0-0]</td><td class='fault'>0,250</td><td class='fault'>0,297</td><td class='fault'>0,326</td></tr>
+<tr><td>Chrome_1920_1080-a-3-source_bearbeitet</td><td class='category'>[0-0]</td><td class='fault'>0,250</td><td class='fault'>0,328</td><td class='fault'>0,311</td></tr>
+<tr><td>Chrome_1920_1080-a-3-source_groß</td><td class='category'>[0-0]</td><td class='fault'>0,556</td><td class='fault'>0,484</td><td class='fault'>0,508</td></tr>
+<tr><td>Chrome_1920_1080-a-5-source</td><td class='category'>[0-0]</td><td class='fault'>0,139</td><td class='fault'>0,344</td><td class='fault'>0,288</td></tr>
+<tr><td>Chrome_1920_1080-a-5-source2</td><td class='category'>[0-0]</td><td class='fault'>0,250</td><td class='fault'>0,297</td><td class='fault'>0,326</td></tr>
+<tr><td>Chrome_1920_1080-a-5-source3</td><td class='category'>[0-0]</td><td class='fault'>0,250</td><td class='fault'>0,297</td><td class='fault'>0,326</td></tr>
+<tr><td>Chrome_1920_1080-a-5-source_bearbeitet</td><td class='category'>[0-0]</td><td class='fault'>0,250</td><td class='fault'>0,328</td><td class='fault'>0,311</td></tr>
+<tr><td>Chrome_1920_1080-a-5-source_groß</td><td class='category'>[0-0]</td><td class='fault'>0,556</td><td class='fault'>0,484</td><td class='fault'>0,508</td></tr>
+<tr><td>source-source2</td><td class='category'>[0-0]</td><td class='fault'>0,111</td><td class=''>0,078</td><td class='fault'>0,129</td></tr>
+<tr><td>source-source3</td><td class='category'>[0-0]</td><td class='fault'>0,111</td><td class=''>0,078</td><td class='fault'>0,129</td></tr>
+<tr><td>source-source_bearbeitet</td><td class='category'>[0-0]</td><td class='fault'>0,167</td><td class=''>0,016</td><td class=''>0,023</td></tr>
+<tr><td>source-source_groß</td><td class='category'>[0-0]</td><td class='fault'>0,583</td><td class='fault'>0,578</td><td class='fault'>0,432</td></tr>
+<tr><td>source2-source3</td><td class='category'>[0-0]</td><td class=''>0,000</td><td class=''>0,000</td><td class=''>0,000</td></tr>
+<tr><td>source2-source_bearbeitet</td><td class='category'>[0-0]</td><td class='fault'>0,278</td><td class=''>0,094</td><td class='fault'>0,152</td></tr>
+<tr><td>source2-source_groß</td><td class='category'>[0-0]</td><td class='fault'>0,528</td><td class='fault'>0,531</td><td class='fault'>0,561</td></tr>
+<tr><td>source3-source_bearbeitet</td><td class='category'>[0-0]</td><td class='fault'>0,278</td><td class=''>0,094</td><td class='fault'>0,152</td></tr>
+<tr><td>source3-source_groß</td><td class='category'>[0-0]</td><td class='fault'>0,528</td><td class='fault'>0,531</td><td class='fault'>0,561</td></tr>
+<tr><td>source_bearbeitet-source_groß</td><td class='category'>[0-0]</td><td class='fault'>0,472</td><td class='fault'>0,562</td><td class='fault'>0,409</td></tr>
+<tr class='spacerRow'><td colspan='2'></td><td colspan='3'></td></tr>
+<tr><td colspan = 2><b>Avg match:</b></td><td>0,264</td><td>0,279</td><td>0,279</td></tr>
+<tr><td colspan = 2><b>Avg distinct:</b></td><td>0,000</td><td>0,000</td><td>0,000</td></tr>
+<tr><td colspan = 2><b>Min/Max match:</b></td><td>0,000/0,583</td><td>0,000/0,578</td><td>0,000/0,561</td></tr>
+<tr><td colspan = 2><b>Min/Max distinct:</b></td><td>∞/-∞</td><td>∞/-∞</td><td>∞/-∞</td></tr>
+<tr><td colspan = 2><b>True Positive / False Positive</b></td><td>4/0</td><td>9/0</td><td>5/0</td></tr>
+<tr><td colspan = 2><b>False Negative / True Negative</b></td><td>24/0</td><td>19/0</td><td>23/0</td></tr>
+<tr><td colspan = 2><b>Accuracy</b></td><td>0,143</td><td>0,321</td><td>0,179</td></tr>
+<tr><td colspan = 2><b>Precision</b></td><td>1,000</td><td>1,000</td><td>1,000</td></tr>
+</tbody></table><script src="C:\Users\Speick\OneDrive\Web-Compare\file:\C:\Users\Speick\.m2\repository\com\github\kilianB\JImageHash\3.0.0\JImageHash-3.0.0.jar!\Chart.bundle.min.js"></script><div style='width:40%; margin:auto;'>
+<canvas id ='chartCanvas' width='600' height='400' style='background-color:' />
+</div>
+<script>
+var dataDictMatch = {};
+dataDictMatch['1901141155']=[{x:0.0,y:9},{x:0.1,y:0},{x:0.2,y:6},{x:0.3,y:6},{x:0.4,y:3},{x:0.5,y:4},{x:0.6,y:0},{x:0.7,y:0},{x:0.8,y:0},{x:0.9,y:0}];
+dataDictMatch['1901079651']=[{x:0.0,y:4},{x:0.1,y:6},{x:0.2,y:11},{x:0.3,y:0},{x:0.4,y:1},{x:0.5,y:6},{x:0.6,y:0},{x:0.7,y:0},{x:0.8,y:0},{x:0.9,y:0}];
+dataDictMatch['1901234372']=[{x:0.0,y:5},{x:0.1,y:4},{x:0.2,y:3},{x:0.3,y:9},{x:0.4,y:2},{x:0.5,y:5},{x:0.6,y:0},{x:0.7,y:0},{x:0.8,y:0},{x:0.9,y:0}];
+var dataDictDistinct = {};
+dataDictDistinct['1901141155']=[{x:0.0,y:0},{x:0.1,y:0},{x:0.2,y:0},{x:0.3,y:0},{x:0.4,y:0},{x:0.5,y:0},{x:0.6,y:0},{x:0.7,y:0},{x:0.8,y:0},{x:0.9,y:0}];
+dataDictDistinct['1901079651']=[{x:0.0,y:0},{x:0.1,y:0},{x:0.2,y:0},{x:0.3,y:0},{x:0.4,y:0},{x:0.5,y:0},{x:0.6,y:0},{x:0.7,y:0},{x:0.8,y:0},{x:0.9,y:0}];
+dataDictDistinct['1901234372']=[{x:0.0,y:0},{x:0.1,y:0},{x:0.2,y:0},{x:0.3,y:0},{x:0.4,y:0},{x:0.5,y:0},{x:0.6,y:0},{x:0.7,y:0},{x:0.8,y:0},{x:0.9,y:0}];
+var dataDictScatter = {};
+dataDictScatter['1901141155']=[{x:0.0,y:0.0},{x:0.0,y:0.5},{x:0.34375,y:1.0},{x:0.296875,y:1.5},{x:0.296875,y:2.0},{x:0.328125,y:2.5},{x:0.484375,y:3.0},{x:0.0,y:3.5},{x:0.34375,y:4.0},{x:0.296875,y:4.5},{x:0.296875,y:5.0},{x:0.328125,y:5.5},{x:0.484375,y:6.0},{x:0.34375,y:6.5},{x:0.296875,y:7.0},{x:0.296875,y:7.5},{x:0.328125,y:8.0},{x:0.484375,y:8.5},{x:0.078125,y:9.0},{x:0.078125,y:9.5},{x:0.015625,y:10.0},{x:0.578125,y:10.5},{x:0.0,y:11.0},{x:0.09375,y:11.5},{x:0.53125,y:12.0},{x:0.09375,y:12.5},{x:0.53125,y:13.0},{x:0.5625,y:13.5},];
+dataDictScatter['1901079651']=[{x:0.0,y:0.0},{x:0.0,y:0.5},{x:0.1388888888888889,y:1.0},{x:0.25,y:1.5},{x:0.25,y:2.0},{x:0.25,y:2.5},{x:0.5555555555555556,y:3.0},{x:0.0,y:3.5},{x:0.1388888888888889,y:4.0},{x:0.25,y:4.5},{x:0.25,y:5.0},{x:0.25,y:5.5},{x:0.5555555555555556,y:6.0},{x:0.1388888888888889,y:6.5},{x:0.25,y:7.0},{x:0.25,y:7.5},{x:0.25,y:8.0},{x:0.5555555555555556,y:8.5},{x:0.1111111111111111,y:9.0},{x:0.1111111111111111,y:9.5},{x:0.16666666666666666,y:10.0},{x:0.5833333333333334,y:10.5},{x:0.0,y:11.0},{x:0.2777777777777778,y:11.5},{x:0.5277777777777778,y:12.0},{x:0.2777777777777778,y:12.5},{x:0.5277777777777778,y:13.0},{x:0.4722222222222222,y:13.5},];
+dataDictScatter['1901234372']=[{x:0.0,y:0.0},{x:0.0,y:0.5},{x:0.2878787878787879,y:1.0},{x:0.32575757575757575,y:1.5},{x:0.32575757575757575,y:2.0},{x:0.3106060606060606,y:2.5},{x:0.5075757575757576,y:3.0},{x:0.0,y:3.5},{x:0.2878787878787879,y:4.0},{x:0.32575757575757575,y:4.5},{x:0.32575757575757575,y:5.0},{x:0.3106060606060606,y:5.5},{x:0.5075757575757576,y:6.0},{x:0.2878787878787879,y:6.5},{x:0.32575757575757575,y:7.0},{x:0.32575757575757575,y:7.5},{x:0.3106060606060606,y:8.0},{x:0.5075757575757576,y:8.5},{x:0.12878787878787878,y:9.0},{x:0.12878787878787878,y:9.5},{x:0.022727272727272728,y:10.0},{x:0.4318181818181818,y:10.5},{x:0.0,y:11.0},{x:0.15151515151515152,y:11.5},{x:0.5606060606060606,y:12.0},{x:0.15151515151515152,y:12.5},{x:0.5606060606060606,y:13.0},{x:0.4090909090909091,y:13.5},];
+var dataDictCenter = {};
+dataDictCenter['1901141155']=[0.13950892857142858];
+dataDictCenter['1901079651']=[0.13194444444444445];
+dataDictCenter['1901234372']=[0.1396103896103896];
+ Chart.defaults.global.defaultFontColor='white';
+var canvas = document.getElementById('chartCanvas').getContext('2d')
+var chart = new Chart(canvas, {
+	data: {
+
+		datasets: [{
+
+				label: 'points',
+				type: 'scatter',
+				fill: false,
+				showLine: false,
+				pointRadius: 5,
+				backgroundColor: 'orange'
+			},
+			{
+				type: 'line',
+				label: 'match',
+				steppedLine: true,
+				pointRadius: 0,
+				backgroundColor: 'rgba(32,178,170,0.65)'
+				},
+			{
+				type: 'line',
+				label: 'distinct',
+				steppedLine: true,
+				pointRadius: 0,
+				backgroundColor: 'rgba(250,128,114,0.8)'
+			}
+		]
+	},
+	options: {
+		responsive: true,
+		scales: {
+				yAxes: [{
+					gridLines: {
+						color: 'white'
+					},
+					scaleLabel: {
+						display: true,
+						labelString: 'Occurances',
+					}
+				}],
+				xAxes: [{
+					type:'linear',
+					gridLines: {
+						color: 'white'
+					},
+					ticks: {
+						min:0,
+						max:1,
+						stepSize:0.1
+					},
+					scaleLabel: {
+						display: true,
+						labelString: 'Distance',
+					}
+				}]
+			},
+		title:{
+			display:true,
+			text: 'Test'
+		}
+	}
+})
+var table = document.getElementById('rootTable');
+var lastIndex = -1;
+var lastObject = undefined;
+table.addEventListener('mousemove',function(e){
+	var parentTr = e.path[1];
+	var target = e.path[0];
+	if(target == lastObject){
+		return;
+	}
+	lastObject = target;
+	var correctCellIndex = 0;
+	//Fix: Compute correct cellindex due to colspans
+	for(let cell of parentTr.cells){
+ 		if(cell == target){
+			break;
+		}else{
+			correctCellIndex += cell.colSpan;
+		}
+	}
+	if(correctCellIndex != lastIndex) {
+		lastIndex = correctCellIndex;
+		//First tr in tbody with cellIndex - 1
+		var id = table.rows[1].cells[correctCellIndex-1].id
+		if(id === undefined){
+			return;
+		}
+
+		//Repopulate table
+
+		chart.options.title.text = table.rows[1].cells[correctCellIndex-1].innerText;
+
+		chart.data.datasets[1].data = dataDictMatch[id];
+		chart.data.datasets[2].data = dataDictDistinct[id];
+		chart.data.datasets[0].data = dataDictScatter[id];
+		chart.config.verticalMarker = dataDictCenter[id]
+		chart.update();
+	}
+const verticalLinePlugin = {
+  getLinePosition: function (chart, value) {
+		return chart.scales['x-axis-0'].getPixelForValue(value);  },
+  renderVerticalLine: function (chartInstance, xValue) {
+      const lineLeftOffset = this.getLinePosition(chartInstance, xValue);
+      const scale = chartInstance.scales['y-axis-0'];
+      const context = chartInstance.chart.ctx;
+
+      // render vertical line
+      context.beginPath();
+      context.strokeStyle = 'white';
+      context.lineWidth = 2;
+      context.moveTo(lineLeftOffset, scale.top);
+      context.lineTo(lineLeftOffset, scale.bottom);
+      context.stroke();
+
+      // write label
+  },
+
+  afterDatasetsDraw: function (chart, easing) {
+      if (chart.config.verticalMarker) {
+          chart.config.verticalMarker.forEach(xValue => this.renderVerticalLine(chart, xValue));
+      }
+  }
+  };
+
+  Chart.plugins.register(verticalLinePlugin);
+});</script>
+</div>
+	</body>
+</html>
